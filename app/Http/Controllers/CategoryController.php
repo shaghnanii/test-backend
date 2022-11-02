@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\Category\CategoryIndexRequest;
 use App\Http\Requests\Category\CategoryStoreRequest;
+use App\Http\Requests\Category\CategoryUpdateRequest;
 use App\Models\Category;
 use App\Traits\ApiResponseTrait;
 use Illuminate\Http\Request;
@@ -53,7 +54,7 @@ class CategoryController extends Controller
         }
     }
 
-    public function update(Request $request, $id)
+    public function update(CategoryUpdateRequest $request, $id)
     {
         try {
             DB::beginTransaction();

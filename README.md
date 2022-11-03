@@ -29,25 +29,35 @@ You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you
 
 If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
+## Instructions
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+Here are some instructions you need to follow inorder to run this project successfully on your local machine.
 
-### Premium Partners
+### Step 1:
+`git clone https://github.com/shaghnanii/test-backend.git`
+Clone the repo to your local machine by using this command.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+### Step 2:
+Create new `.env` file and copy the content of `.env.example` into your new created `.env` file.
+
+### Step 3:
+`composer install`
+
+### Step 4:
+`php artisan key:generate`
+
+### Step 5:
+`php artisan jwt:secret`
+
+### Step 6:
+`php artisan migrate`
+
+### Step 7:
+`php artisan serve`
+
+### Note:
+
+Don't forget to update the mail settings in your env file.
 
 ## Contributing
 

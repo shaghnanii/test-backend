@@ -13,7 +13,10 @@ class DashboardController extends Controller
     public function index()
     {
         try {
-            $dashboard = Car::query()->with('category')->get();
+            $cars = Car::query()->with('category')->get();
+
+            return $this->sendResponse($cars, 'index', Car::class);
+
         }
         catch (\Exception $exception)
         {
